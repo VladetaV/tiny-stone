@@ -39,8 +39,8 @@ public class FirstWeekBasic {
     @Test
     public void secondTest(){
 
-        WebDriverManager.firefoxdriver().setup();
-        WebDriver driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 

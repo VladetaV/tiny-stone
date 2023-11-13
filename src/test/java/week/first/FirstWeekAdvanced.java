@@ -2,7 +2,8 @@ package week.first;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,15 +20,15 @@ public class FirstWeekAdvanced {
 
     WebDriver driver = null;
 
-    @Parameters({"browser"})
-    @BeforeMethod
-    public void setup(String browser){
+    //@Parameters({"browser"})
+    //@BeforeMethod
+    public void setup(){
 
-        //    WebDriverManager.firefoxdriver().setup();
-        //    WebDriver driver = new FirefoxDriver();
-        //    driver.get("http://localhost:9010");
+            WebDriverManager.chromedriver().setup();
+            WebDriver driver = new ChromeDriver();
+            driver.get("https://www.saucedemo.com/");
 
-        driver = WebDriverFabric.startBrowser(browser);
+            //driver = WebDriverFabric.startBrowser(browser);
 
     }
 

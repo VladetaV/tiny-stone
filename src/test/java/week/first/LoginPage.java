@@ -18,7 +18,7 @@ public class LoginPage extends BasePage {
 
     private By usernameFieldXpath = By.xpath("//input[@type='text']");
 
-    private By passwordFieldCSS = By.cssSelector("input[type='password");
+    private By passwordFieldCSS = By.cssSelector("input[type='password']");
 
     private By loginButtonCSS = By.cssSelector("input[value='Login']");
 
