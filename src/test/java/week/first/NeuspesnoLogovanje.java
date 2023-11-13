@@ -19,9 +19,6 @@ import java.util.concurrent.TimeUnit;
 
 public class NeuspesnoLogovanje {
 
-    private static final String USERNAME = "standard_user";
-    private static final String PASSWORD = "secret_sauce";
-
     @Test
     public static void Test() {
         WebDriverManager.chromedriver().setup();
