@@ -44,10 +44,10 @@ public class NeuspesnoLogovanje {
         usernameFieldXPath.sendKeys("pogresan_username");
 
 
-        WebElement usernameFieldCSS =
+        WebElement passwordFieldCSS =
                 driver.findElement(By.cssSelector("input[type='password']"));
 
-        usernameFieldCSS.sendKeys("pogresan_password");
+        passwordFieldCSS.sendKeys("pogresan_password");
 
         WebElement logInButtonCSS =
                 driver.findElement(By.cssSelector("input[value='Login']"));

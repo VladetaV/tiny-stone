@@ -45,10 +45,10 @@ public class UspesnoLogovanje {
         usernameFieldXPath.sendKeys("standard_user");
 
 
-        WebElement usernameFieldCSS =
+        WebElement passwordFieldCSS =
                 driver.findElement(By.cssSelector("input[type='password']"));
 
-        usernameFieldCSS.sendKeys("secret_sauce");
+        passwordFieldCSS.sendKeys("secret_sauce");
 
         WebElement logInButtonCSS =
                 driver.findElement(By.cssSelector("input[value='Login']"));
